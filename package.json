@@ -2,9 +2,9 @@
   "name": "restaurant-template",
   "version": "1.0.0",
   "description": "restaurant website template",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch" 
   },
   "author": "",
   "license": "MIT",
