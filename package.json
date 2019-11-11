@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-template",
+  "version": "1.0.0",
+  "description": "restaurant website template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}
