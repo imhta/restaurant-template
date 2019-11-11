@@ -4,12 +4,16 @@
   "description": "restaurant website template",
   "main": "src/index.js",
   "scripts": {
-    "watch": "webpack --watch" 
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^6.6.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.0.1"
   }
 }
