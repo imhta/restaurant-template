@@ -145,6 +145,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 
 /***/ }),
 
+/***/ "./src/pages/contact.js":
+/*!******************************!*\
+  !*** ./src/pages/contact.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar ContactPage = function ContactPage() {\n  return \"\\n    <main>\\n        <h1>Contact</h1>\\n    </main>\\n    \";\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ContactPage);\n\n//# sourceURL=webpack:///./src/pages/contact.js?");
+
+/***/ }),
+
+/***/ "./src/pages/home.js":
+/*!***************************!*\
+  !*** ./src/pages/home.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar HomePage = function HomePage() {\n  return \"\\n    <main>\\n        <h1>awesome food from your neighourhood</h1>\\n    </main>\\n    \";\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (HomePage);\n\n//# sourceURL=webpack:///./src/pages/home.js?");
+
+/***/ }),
+
+/***/ "./src/pages/menu.js":
+/*!***************************!*\
+  !*** ./src/pages/menu.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar MenuPage = function MenuPage() {\n  return \"\\n    <main>\\n        <h1>Menu</h1>\\n    </main>\\n    \";\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (MenuPage);\n\n//# sourceURL=webpack:///./src/pages/menu.js?");
+
+/***/ }),
+
 /***/ "./src/pages/page.js":
 /*!***************************!*\
   !*** ./src/pages/page.js ***!
@@ -153,7 +189,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/navbar */ \"./src/components/navbar.js\");\n\n\nvar Page = function () {\n  return {\n    render: function render(pageName) {\n      document.getElementById(\"content\").innerHTML = _components_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render(pageName);\n    }\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Page);\n\n//# sourceURL=webpack:///./src/pages/page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/navbar */ \"./src/components/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/pages/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/pages/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/pages/contact.js\");\n\n\n\n\n\nvar currentPage = function currentPage(pageName) {\n  switch (pageName) {\n    case \"contact\":\n      return Object(_contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n    case \"menu\":\n      return Object(_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n    default:\n      return Object(_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  }\n};\n\nvar Page = function () {\n  return {\n    render: function render(pageName) {\n      document.getElementById(\"content\").innerHTML = _components_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render(pageName) + currentPage(pageName);\n    }\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Page);\n\n//# sourceURL=webpack:///./src/pages/page.js?");
 
 /***/ }),
 
