@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+
+$fb-primary: rgb(0, 121, 84);
+$fb-secondary: rgb(255, 19, 19);
+
+body {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 1.5rem;
+  header {
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      .brand-logo {
+        font-size: 2em;
+        color: $fb-primary;
+        text-decoration-color: $fb-secondary;
+        text-decoration-style: solid;
+        text-decoration-line: overline;
+      }
+      ul {
+        width: 400px;
+        margin: 0px;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        li {
+          text-decoration: none;
+          a{
+            color: $fb-secondary;
+          }
+          .selected {
+            color: $fb-primary;
+          }
+        }
+      }
+    }
+  }
+}
