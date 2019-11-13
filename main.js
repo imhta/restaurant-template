@@ -141,19 +141,19 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar generateTab = function ge
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\n\nvar home = new _pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nhome.render();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _pages_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/page */ \"./src/pages/page.js\");\n\n\ndocument.addEventListener('click', function (e) {\n  var target = e.target;\n\n  if (target.getAttribute('data-role') === 'tab') {\n    var tabName = target.getAttribute('data-id');\n    _pages_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render(tabName);\n  }\n});\n_pages_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render(\"home\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/pages/home.js":
+/***/ "./src/pages/page.js":
 /*!***************************!*\
-  !*** ./src/pages/home.js ***!
+  !*** ./src/pages/page.js ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/navbar */ \"./src/components/navbar.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\nvar Page =\n/*#__PURE__*/\nfunction () {\n  function Page() {\n    _classCallCheck(this, Page);\n  }\n\n  _createClass(Page, [{\n    key: \"render\",\n    value: function render() {\n      document.getElementById('content').innerHTML = _components_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render('home');\n    }\n  }]);\n\n  return Page;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Page);\n\n//# sourceURL=webpack:///./src/pages/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/navbar */ \"./src/components/navbar.js\");\n\n\nvar Page = function () {\n  return {\n    render: function render(pageName) {\n      document.getElementById(\"content\").innerHTML = _components_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render(pageName);\n    }\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Page);\n\n//# sourceURL=webpack:///./src/pages/page.js?");
 
 /***/ }),
 
