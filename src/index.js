@@ -1,6 +1,13 @@
-import './scss/main.scss';
-import Page from "./pages/home";
+import "./scss/main.scss";
+import Page from "./pages/page";
 
-const home = new Page()
 
-home.render()
+document.addEventListener('click', (e) => {
+    const { target } = e;
+    if (target.getAttribute('data-role') === 'tab') {
+      const tabName = target.getAttribute('data-id');
+      Page.render(tabName);
+    }
+});
+
+Page.render("home");
