@@ -4,7 +4,8 @@
   "description": "restaurant website template",
   "main": "src/index.js",
   "scripts": {
-    "watch": "webpack --watch"
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
   },
   "author": "",
   "license": "MIT",
