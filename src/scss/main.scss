@@ -3,19 +3,21 @@
 $fb-primary: rgb(0, 121, 84);
 $fb-secondary: rgb(255, 19, 19);
 $fb-white-op: rgba(255, 255, 255, 0.753);
+$fb-black-op: rgba(0, 0, 0, 0.568);
 body {
   font-family: "Baloo Bhai", cursive;
   font-size: 1.5rem;
-  background-image: url("https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-image: url("https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   margin: 0px;
   header {
+    background-color: white;
     nav {
       display: flex;
       justify-content: center;
-      background-color: $fb-white-op;
-
       .brand-logo {
         font-size: 2em;
         color: $fb-primary;
@@ -44,5 +46,39 @@ body {
   }
   main {
     text-align: center;
+    h1{
+      margin: 0px;
+      padding: 20px;
+      color: white;
+      background-color: $fb-black-op;
+    }
+    .card {
+      max-width: 1200px;
+      margin: 20px auto;
+      color: black;
+      background-color: whitesmoke;
+      border-radius: 25px;
+      padding: 10px;
+    }
+  }
+  footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    p {
+      text-align: center;
+      color: $fb-primary;
+      margin: 0px;
+      span{
+        color: $fb-secondary;
+      }
+      .brand-logo {
+        color: $fb-primary;
+        text-decoration-color: $fb-secondary;
+        text-decoration-style: solid;
+        text-decoration-line: overline;
+      }
+    }
   }
 }
