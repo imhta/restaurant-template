@@ -9,7 +9,7 @@
   </a>
 </p>
 
-Calculator App built using React
+Basic SPA restaurant template built with vanilla js
 
 ### ✨ [Demo]()
 
