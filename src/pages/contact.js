@@ -1,5 +1,4 @@
-const ContactPage = () => {
-  return `
+const ContactPage = () => `
     <main>
         <h1>Contact</h1>
         <section class="card">
@@ -15,6 +14,5 @@ const ContactPage = () => {
         </section>
     </main>
     `;
-};
 
 export default ContactPage;
