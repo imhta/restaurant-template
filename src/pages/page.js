@@ -3,14 +3,17 @@ import HomePage from "./home";
 import MenuPage from "./menu";
 import ContactPage from "./contact";
 
+const MENU = MenuPage()
+const CONTACT = ContactPage()
+const HOME = HomePage()
 const currentPage = (pageName) => {
   switch(pageName) {
     case "contact":
-      return ContactPage()
+      return CONTACT
     case "menu":
-      return MenuPage()
+      return MENU
     default:
-      return HomePage()
+      return HOME
   }
 }
 const Page = (function() {
