@@ -3,23 +3,24 @@ import HomePage from "./home";
 import MenuPage from "./menu";
 import ContactPage from "./contact";
 
-const MENU = MenuPage()
-const CONTACT = ContactPage()
-const HOME = HomePage()
-const currentPage = (pageName) => {
-  switch(pageName) {
+const MENU = MenuPage();
+const CONTACT = ContactPage();
+const HOME = HomePage();
+const currentPage = pageName => {
+  switch (pageName) {
     case "contact":
-      return CONTACT
+      return CONTACT;
     case "menu":
-      return MENU
+      return MENU;
     default:
-      return HOME
+      return HOME;
   }
-}
+};
 const Page = (function() {
   return {
     render(pageName) {
-      document.getElementById("content").innerHTML = Navbar.render(pageName) + currentPage(pageName);
+      document.getElementById("content").innerHTML =
+        Navbar.render(pageName) + currentPage(pageName);
     }
   };
 })();
