@@ -8,7 +8,7 @@
 
 Basic SPA restaurant template built with vanilla js
 
-### ✨ [Demo]()
+### ✨ [Demo](https://imhta.github.io/restaurant-template)
 
 ## Install
 
