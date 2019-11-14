@@ -11,8 +11,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
   margin: 0px;
+  .text-primary{
+    color: $fb-primary;
+  }
   header {
     background-color: white;
     nav {
@@ -52,12 +54,37 @@ body {
       background-color: $fb-black-op;
     }
     .card {
-      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
       margin: 20px auto;
       color: black;
       background-color: whitesmoke;
       border-radius: 25px;
-      padding: 10px;
+      padding: 40px;
+      box-shadow: 4px 4px 20px -1px rgba(0,0,0,0.75);
+      article{
+        width: 200px;
+        margin: 5px;
+        .img-wrapper{
+          width: 200px;
+          height: 200px;
+          overflow: hidden;
+          position: relative;
+          img{
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            position: absolute;
+          }
+        }
+        .content{
+          padding: 2px 4px;
+          p{
+            margin: 0px;
+          }
+        }
+      }
     }
   }
   footer{
